@@ -1,5 +1,6 @@
 import React from "react";
 import "./Login.scss";
+import logo from '../../assets/logo/logo.svg'
 import loginUserIcon from "../../assets/login/login-username-icon.svg";
 import loginPasswordIcon from "../../assets/login/login-password-icon.svg";
 import loginChevronIcon from "../../assets/login/login-chevron-icon.svg";
@@ -10,7 +11,7 @@ function Login() {
         <div className="login">
             <div className="top__container">
                 <h1 className="login__header">Welcome to</h1>
-                <img className="brand__logo" alt="brand__logo" />
+                <img className="brand__logo" src={logo} alt="brand__logo" />
                 <form className="login__form">
                     <div className="form__container">
                         <img src={loginUserIcon} alt="login-username-icon" />
