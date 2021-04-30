@@ -12,7 +12,7 @@ export default function Header() {
                     alt="hamburger icon"
                 />
                 <div className="header__logo-container">
-                    <h1 className="header__title">SHIELD</h1>
+                    <h1 className="header__title">Shield</h1>
                 </div>
             </div>
         </section>

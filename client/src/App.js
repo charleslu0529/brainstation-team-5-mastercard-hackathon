@@ -48,7 +48,7 @@ class App extends React.Component {
                     path='/dashboard'
                     exact
                     render={(props)=><Dashboard {...props}/>}
-                />
+                    />
                 </Switch>
             </div>
         );
