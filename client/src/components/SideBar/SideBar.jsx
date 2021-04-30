@@ -1,7 +1,7 @@
 import React from "react";
 import xIcon from "../../assets/icons/x.svg";
 import logoImg from '../../assets/images/shieldLogo.svg';
-import "./sideBar.scss";
+import "../SideBar/sidBar.scss";
 import home from '../../assets/icons/home.svg';
 import profile from '../../assets/icons/profile.svg';
 import filters from '../../assets/icons/filters.svg';
