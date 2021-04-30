@@ -4,22 +4,53 @@ import Login from "./components/LogIn/Login";
 import AddCard from "./components/AddCard/AddCard";
 import HomeScreen from "../src/components/HomeScreen/HomeScreen";
 import React from "react";
-import Dashboard from './components/Dashboard/Dashboard'
+import Dashboard from './components/Dashboard/Dashboard';
+import cardsData from './data/cards.json';
 
 
 class App extends React.Component {
 
     state = {
-        cards:[],
-        accounts:[],
+        cards:cardsData,
     }
 
-    addNewCard = (event) => {
+    addNewCard = (event, props) => {
         event.preventDefault();
-        let newCard = {};
+        console.log(event.target);
+        let newCard = {
+            "cardNumber": "513481649511",
+            "accounts": [
+                {
+                    "website": "amazon.com",
+                    "date": "Last used 2021.02.02",
+                    "image": ""
+                },
+                {
+                    "website": "heb.com",
+                    "date": "Last used 2021.02.02",
+                    "image": ""
+                },
+                {
+                    "website": "kroger.com",
+                    "date": "Last used 2021.02.02",
+                    "image": ""
+                },
+                {
+                    "website": "walmart.com",
+                    "date": "Last used 2021.02.02",
+                    "image": ""
+                },
+                {
+                    "website": "ilovetattoos.ai",
+                    "date": "Last used 2021.02.02",
+                    "image": ""
+                }
+            ]
+        };
         this.setState({
             cards:[...this.state.cards, newCard]
         })
+        props.history.push("/cards");
     }
 
     deleteAccount = (event) => {
@@ -38,17 +69,17 @@ class App extends React.Component {
                     <Route
                         path="/cards"
                         exact
-                        render={(props) => <HomeScreen {...props} />}
+                        render={(props) => <HomeScreen {...props} cards={this.state.cards}/>}
                     />
                     <Route
                         path="/cards/add"
                         exact
-                        render={(props) => <AddCard {...props} />}
+                        render={(props) => <AddCard {...props} handleSubmit={this.addNewCard} />}
                     />
                     <Route
                     path='/dashboard'
                     exact
-                    render={(props)=><Dashboard {...props}/>}
+                    render={(props)=><Dashboard {...props} accounts={this.state.cards[0].accounts}/>}
                     />
                 </Switch>
             </div>

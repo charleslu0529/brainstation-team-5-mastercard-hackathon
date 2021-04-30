@@ -32,7 +32,12 @@ export class AddCard extends React.Component {
             this.state.page === 2 ? (
                 <div className={classes.add__page2}>
                     <input type="password" placeholder="xxxx-xxxx-xxxx" />
-                    <button type="submit" className={`${classes.add__submit} ${classes.add__button}`}>Add Account</button>
+                    <button
+                        type="submit"
+                        className={`${classes.add__submit} ${classes.add__button}`}
+                    >
+                        Add Account
+                    </button>
                 </div>
             ) : (
                 <>
@@ -64,7 +69,14 @@ export class AddCard extends React.Component {
                         <img src={cross} alt="" />
                     </Link>
                 </div>
-                <form className={classes.add__form}>{show}</form>
+                <form
+                    className={classes.add__form}
+                    onSubmit={(event) => {
+                        this.props.handleSubmit(event, this.props);
+                    }}
+                >
+                    {show}
+                </form>
             </div>
         );
     }

@@ -13,6 +13,9 @@
     height: 136px;
     background-color: #c4c4c4;
     border-radius: 30px;
+    &-link {
+      margin: 8px 0;
+    }
   }
   &__link {
     text-decoration: none;
