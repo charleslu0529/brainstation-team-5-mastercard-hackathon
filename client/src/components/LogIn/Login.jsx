@@ -9,7 +9,7 @@ function Login() {
     return (
         <div className='login'>
            <div className='top__container'>
-                <h1>Welcome to</h1> 
+                <h1 className='login__header'>Welcome to</h1> 
                 <img className='brand__logo' alt='brand__logo'/>
                 <form className='login__form'>
                     <div className='form__container'>
