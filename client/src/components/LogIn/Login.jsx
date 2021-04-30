@@ -4,13 +4,14 @@ import loginUserIcon from "../../assets/login/login-username-icon.svg";
 import loginPasswordIcon from "../../assets/login/login-password-icon.svg";
 import loginChevronIcon from "../../assets/login/login-chevron-icon.svg";
 import { Link } from "react-router-dom";
+import logo from '../../assets/logo/logo.svg';
 
 function Login() {
     return (
         <div className="login">
             <div className="top__container">
                 <h1 className="login__header">Welcome to</h1>
-                <img className="brand__logo" alt="brand__logo" />
+                <img className="brand__logo" alt="brand__logo" src={logo} />
                 <form className="login__form">
                     <div className="form__container">
                         <img src={loginUserIcon} alt="login-username-icon" />
