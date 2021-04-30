@@ -7,7 +7,7 @@ export default function HomeScreen(props) {
     let cards = props.cards.map((card) => {
         return (
             <Link to="/dashboard" className="homescreen__card-link">
-                <div className="homescreen__card"></div>
+                <img className="homescreen__card" src={card.cardImage}/>
             </Link>
         );
     });

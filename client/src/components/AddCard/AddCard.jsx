@@ -31,13 +31,13 @@ export class AddCard extends React.Component {
             this.state.page === 2 ? (
                 <div className={classes.add__page2}>
                     <div className={classes.add__buttonRad}>
-                        <label htmlFor="choice1">4531 5467 6546 1534</label>
+                        <label htmlFor="choice1">5502 0132 7232 1535</label>
                         <input
                             className={classes.add__radio}
                             id="choice1"
                             type="radio"
                             name="card"
-                            value="4531546765461534"
+                            value="5502013272321535"
                         />
                     </div>
                     <div className={classes.add__buttonRad}>
@@ -80,10 +80,12 @@ export class AddCard extends React.Component {
                 </>
             );
 
+            let title = this.state.page === 2 ? "Account" : "Card";
+
         return (
             <div className={classes.add}>
                 <div className={classes.add__pageTitle}>
-                    <h1 className={classes.add__title}>Add Card</h1>
+                    <h1 className={classes.add__title}>Add {title}</h1>
                     <Link to="/cards" className={classes.add__return}>
                         <img src={cross} alt="" />
                     </Link>

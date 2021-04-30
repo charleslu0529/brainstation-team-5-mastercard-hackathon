@@ -19,6 +19,7 @@ class App extends React.Component {
         console.log(event.target);
         let newCard = {
             "cardNumber": "513481649511",
+            "cardImage": "4060903275323474-chase.svg",
             "accounts": [
                 {
                     "website": "amazon.com",

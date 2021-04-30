@@ -2,14 +2,13 @@ import React from "react";
 import "./Dashboard.scss";
 import dashboardEditIcon from "../../assets/dashboard/dashboard-edit-icon.svg";
 import dashboardDeleteIcon from "../../assets/dashboard/dashboard-delete-icon.svg";
+import citiCard from "../../assets/images/5502013275323474-citi.svg";
 
 export function Dashboard(props) {
     let accounts = props.accounts.map((accountsList) => {
         return (
             <div className="accounts__row">
-                <div className="image__container">
-                    <img src={accountsList.image} />
-                </div>
+                <img src={accountsList.image} className="accounts__image" />
                 <div className="row-text__container">
                     <h4 className="row__text">{accountsList.website}</h4>
                     <p className="row__text">{accountsList.date}</p>
@@ -29,11 +28,15 @@ export function Dashboard(props) {
     });
     return (
         <div className="dashboard">
-            <p className="dashboard__paragraph">Overview</p>
-            <h2 clasName="header">Dashboard</h2>
-            <div className="dashboard__card"></div>
-            <h3 className="dashboard__subheader">ACCOUNTS</h3>
-            {accounts}
+            <div className="dashboard__header">
+                <p className="dashboard__paragraph">Overview</p>
+                <h2 clasName="header">Dashboard</h2>
+            </div>
+            <div className="dashboard__content">
+                <img className="dashboard__card" src={citiCard} />
+                <h3 className="dashboard__subheader">ACCOUNTS</h3>
+                {accounts}
+            </div>
         </div>
     );
 }
