@@ -3,6 +3,7 @@ import "./App.scss";
 import { Switch, Route } from "react-router-dom";
 import Login from "./components/LogIn/Login";
 import AddCard from "./components/AddCard/AddCard";
+import HomeScreen from './components/HomeScreen';
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             </header>
             <Switch>
                 <Route path="/" exact component={Login} />
+                <Route path="/cards" exact component={HomeScreen} />
                 <Route
                     path="/cards/add"
                     exact
