@@ -1,10 +1,10 @@
 import React from "react";
 import "./Login.scss";
+import logo from '../../assets/logo/logo.svg'
 import loginUserIcon from "../../assets/login/login-username-icon.svg";
 import loginPasswordIcon from "../../assets/login/login-password-icon.svg";
 import loginChevronIcon from "../../assets/login/login-chevron-icon.svg";
 import { Link } from "react-router-dom";
-import logo from '../../assets/logo/logo.svg';
 
 function Login() {
     return (
