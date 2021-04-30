@@ -20,8 +20,6 @@ export class AddCard extends React.Component {
         });
     };
 
-    handleOnChange;
-
     handleOnSubmit = (event) => {
         event.preventDefault();
         console.log(event.target);
@@ -31,8 +29,33 @@ export class AddCard extends React.Component {
         let show =
             this.state.page === 2 ? (
                 <div className={classes.add__page2}>
-                    <input type="password" placeholder="xxxx-xxxx-xxxx" />
-                    <button type="submit" className={`${classes.add__submit} ${classes.add__button}`}>Add Account</button>
+                    <div className={classes.add__buttonRad}>
+                        <label htmlFor="choice1">4531 5467 6546 1534</label>
+                        <input
+                            className={classes.add__radio}
+                            id="choice1"
+                            type="radio"
+                            name="card"
+                            value="4531546765461534"
+                        />
+                    </div>
+                    <div className={classes.add__buttonRad}>
+                        <label htmlFor="choice2">3214 7648 1237 5467</label>
+                        <input
+                            id="choice2"
+                            className={classes.add__radio}
+                            type="radio"
+                            name="card"
+                            value="3214764812375467"
+                        />
+                    </div>
+
+                    <button
+                        type="submit"
+                        className={`${classes.add__submit} ${classes.add__button}`}
+                    >
+                        Add Account
+                    </button>
                 </div>
             ) : (
                 <>
@@ -64,7 +87,14 @@ export class AddCard extends React.Component {
                         <img src={cross} alt="" />
                     </Link>
                 </div>
-                <form className={classes.add__form}>{show}</form>
+                <form
+                    className={classes.add__form}
+                    onSubmit={(event) => {
+                        this.props.handleSubmit(event, this.props);
+                    }}
+                >
+                    {show}
+                </form>
             </div>
         );
     }
