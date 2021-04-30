@@ -4,6 +4,7 @@ import Login from "./components/LogIn/Login";
 import AddCard from "./components/AddCard/AddCard";
 import HomeScreen from "./components/HomeScreen";
 import React from "react";
+import Dashboard from './components/Dashboard/Dashboard'
 
 class App extends React.Component {
 
@@ -43,6 +44,11 @@ class App extends React.Component {
                         exact
                         render={(props) => <AddCard {...props} />}
                     />
+                    <Route
+                    path='/dashboard'
+                    exact
+                    render={(props)=><Dashboard {...props}/>}
+                />
                 </Switch>
             </div>
         );
