@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import HomeScreen from './components/HomeScreen';
 import Header from './components/Header';
 
