@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./add-card.module.scss";
 import cross from "../../assets/icons/cross.svg";
 import { Link } from "react-router-dom";
+import cardImage from '../../assets/images/card.svg';
 export class AddCard extends React.Component {
     state = {
         page: 1,
@@ -59,7 +60,7 @@ export class AddCard extends React.Component {
                 </div>
             ) : (
                 <>
-                    <div className={classes.add__featured}></div>
+                    <img className={classes.add__featured} src={cardImage}/>
                     <div className={classes.add__page1}>
                         <label htmlFor="">Username or Access Card</label>
                         <input type="text" name="access" />
