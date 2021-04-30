@@ -9,11 +9,11 @@ export default function Header() {
         <section className="header">
             <div className="header__top-section">
                 <img className="header__img" src={hamItUp} alt="hamburger icon"/>
-                    <SideBar />
                     <div className="header__logo-container">
                         <Logo />
                     </div>
             </div>
+            <SideBar />
         </section>
     )
 }
