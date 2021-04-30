@@ -17,7 +17,7 @@
 }
 
 button {
-  background-color: #C04800;
+  background-color: #c04800;
   color: #ffffff;
   border-radius: 15px;
 }
@@ -43,4 +43,7 @@ button {
   to {
     transform: rotate(360deg);
   }
+}
+input {
+  outline: none;
 }
