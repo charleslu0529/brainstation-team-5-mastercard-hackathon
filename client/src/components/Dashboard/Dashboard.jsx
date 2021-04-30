@@ -15,21 +15,21 @@ export class Dashboard extends Component {
         let accounts = this.state.accounts.map(accountsList=>{
             return (
                 <div className='accounts__row'>
-                    <div>
-                    <img src={accountsList.image} alt={accountsList.website}/>
+                    <div className='image__container'>
+                    <img src={accountsList.image}/>
                     </div>
-                    <div>
-                        <h4>{accountsList.website}</h4>
-                        <p>{accountsList.date}</p>
+                    <div className='row-text__container'>
+                        <h4 className='row__text'>{accountsList.website}</h4>
+                        <p className='row__text'>{accountsList.date}</p>
                     </div>
-                    <img src={dashboardEditIcon} alt='dashboard-Edit-Icon'/>
-                    <img src={dashboardDeleteIcon} alt='dashboard-Delete-Icon'/>
+                    <img className='row__icon' src={dashboardEditIcon} alt='dashboard-Edit-Icon'/>
+                    <img className='row__icon' src={dashboardDeleteIcon} alt='dashboard-Delete-Icon'/>
                 </div>
         )})
         return (
             <div className='dashboard'>
                 <p className='dashboard__paragraph'>Overview</p>
-                <h2 clasName='dashboard__header'>Dashboard</h2>
+                <h2 clasName='header'>Dashboard</h2>
                 <div className='dashboard__card'>
                 </div>
                 <h3 className='dashboard__subheader'>ACCOUNTS</h3>
