@@ -31,7 +31,6 @@ export default function SideBar(props) {
                         />
                         
                     </div>
-                    <img className="sidebar__logo" src={logoImg} alt="Shield Logo"/>
                 </div>
                 <div className="sidebar__bottom-section">
                     <div className="sidebar__selection-wrap">
