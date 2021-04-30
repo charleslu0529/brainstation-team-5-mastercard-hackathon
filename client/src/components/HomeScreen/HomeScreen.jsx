@@ -15,7 +15,7 @@ export default function HomeScreen(props) {
         <section>
             <Header />
             <div className="homescreen">
-                <h2 className="homescreen__sub-title">Cards</h2>
+                <h2 className="homescreen__sub-title">My Cards</h2>
                 {cards}
                 <Link className="homescreen__link" to="/cards/add">
                     <div className="homescreen__new-card">

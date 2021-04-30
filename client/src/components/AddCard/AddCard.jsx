@@ -55,7 +55,7 @@ export class AddCard extends React.Component {
                         type="submit"
                         className={`${classes.add__submit} ${classes.add__button}`}
                     >
-                        Add Account
+                        Add Credit Cards
                     </button>
                 </div>
             ) : (
@@ -80,7 +80,7 @@ export class AddCard extends React.Component {
                 </>
             );
 
-            let title = this.state.page === 2 ? "Account" : "Card";
+            let title = this.state.page === 2 ? "Credit Card" : "Account";
 
         return (
             <div className={classes.add}>
