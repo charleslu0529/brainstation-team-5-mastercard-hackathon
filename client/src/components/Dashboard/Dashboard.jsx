@@ -11,7 +11,7 @@ export class Dashboard extends Component {
         return accounts.map(accountsList=>{
             return (
                 <div>
-                    
+                    <img src={accountsList.image} alt={accountsList.website}/>
                 </div>
             )
         })
