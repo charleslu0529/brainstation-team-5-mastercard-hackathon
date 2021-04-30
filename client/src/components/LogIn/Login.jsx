@@ -40,12 +40,14 @@ function Login() {
                     </div>
                     <button className='login__button'>Log in</button>
                 </form>
+                <div>
                 <p className='chevron__text'>Need help signing in?</p>
                 <img className='chevron__image' src={loginChevronIcon} alt='login-chevron-icon'/>
+                </div>
             </div>
             <div className='lower__container'>
-                <p>Don't have a username and password?</p>
-                <p>Set them up now.</p>
+                <p className='lower__text'>Don't have a username and password?</p>
+                <p className='lower__text--bold'>Set them up now.</p>
             </div>
         </div>
         
