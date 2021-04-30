@@ -11,7 +11,7 @@ function Login() {
         <div className="login">
             <div className="top__container">
                 <h1 className="login__header">Welcome to</h1>
-                <img className="brand__logo" src={logo} alt="brand__logo" />
+                <img className="brand__logo" alt="brand__logo" src={logo} />
                 <form className="login__form">
                     <div className="form__container">
                         <img src={loginUserIcon} alt="login-username-icon" />
