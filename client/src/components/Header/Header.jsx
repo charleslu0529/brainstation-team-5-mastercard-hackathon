@@ -1,6 +1,8 @@
-import React from "react";
-import "./header.scss";
-import hamItUp from "../../assets/icons/hamitup.svg";
+import React from 'react';
+import '../Header/header.scss';
+import hamItUp from '../../assets/icons/hamitup.svg';
+import Logo from '../Logo/Logo';
+
 
 export default function Header() {
     return (
@@ -15,6 +17,7 @@ export default function Header() {
                     <h1 className="header__title">Shield</h1>
                 </div>
             </div>
+            <SideBar />
         </section>
-    );
+    )
 }
