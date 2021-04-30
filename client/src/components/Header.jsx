@@ -1,6 +1,7 @@
 import React from 'react'
 import './header.scss'
 import hamItUp from '../assets/icons/hamitup.svg'
+import Logo from '../components/Logo/Logo'
 
 export default function Header() {
     return (
@@ -8,7 +9,7 @@ export default function Header() {
             <div className="header__top-section">
                 <img className="header__img" src={hamItUp} alt="hamburger icon"/>
                     <div className="header__logo-container">
-                        <h1 className="header__title">SHIELD</h1>
+                        <Logo />
                     </div>
             </div>
         </section>
