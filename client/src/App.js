@@ -3,8 +3,8 @@ import "./App.scss";
 import { Switch, Route } from "react-router-dom";
 import Login from "./components/LogIn/Login";
 import AddCard from "./components/AddCard/AddCard";
-import HomeScreen from './components/HomeScreen';
-import Header from './components/Header';
+import HomeScreen from '../src/components/HomeScreen/HomeScreen';
+import Header from '../src/components/Header/Header';
 
 function App() {
     return (
