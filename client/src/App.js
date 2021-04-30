@@ -2,13 +2,8 @@ import "./App.scss";
 import { Switch, Route } from "react-router-dom";
 import Login from "./components/LogIn/Login";
 import AddCard from "./components/AddCard/AddCard";
-<<<<<<< HEAD
-import HomeScreen from '../src/components/HomeScreen/HomeScreen';
-import Header from '../src/components/Header/Header';
-=======
-import HomeScreen from "./components/HomeScreen";
+import HomeScreen from "../src/components/HomeScreen/HomeScreen";
 import React from "react";
->>>>>>> 8b269b553241f78d6fe38408df2b7e4610ccacee
 
 class App extends React.Component {
 

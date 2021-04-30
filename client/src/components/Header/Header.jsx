@@ -3,11 +3,13 @@ import '../Header/header.scss';
 import hamItUp from '../../assets/icons/hamitup.svg';
 import Logo from '../Logo/Logo';
 
+
 export default function Header() {
     return (
         <section className="header">
             <div className="header__top-section">
                 <img className="header__img" src={hamItUp} alt="hamburger icon"/>
+                    <SideBar />
                     <div className="header__logo-container">
                         <Logo />
                     </div>
