@@ -1,20 +1,21 @@
 .navModal {
-    width: 0;
-    position: fixed;
-    top: 0;
-    &.show {
-        width: 100%;
-        height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.4);
-        backdrop-filter: blur(3px);
-        .sidebar {
-            width: 200px;
-            height: 100vh;
-        }
+  width: 0;
+  position: fixed;
+  top: 0;
+  &.show {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    backdrop-filter: blur(3px);
+    .sidebar {
+      width: 200px;
+      height: 100vh;
     }
+  }
 }
 
 .sidebar {
+<<<<<<< HEAD
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -24,11 +25,23 @@
     height: 100vh;
     overflow: hidden;
     background-color: #fff;
+=======
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  transition: all ease 0.5s;
+  width: 0px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ffffff;
+>>>>>>> dff236653cae450a1920784f7db782d2e2ce27e8
 
-    &.show{
-        width: 200px;
-    }
+  &.show {
+    width: 200px;
+  }
 
+<<<<<<< HEAD
     &__top-section {
         background-color: #fff;
         height: 158px;
@@ -86,4 +99,55 @@
         margin-left: auto;
         margin-right: 20px;
     }
+=======
+  &__top-section {
+    background-color: #ffffff;
+    height: 158px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.25);
+  }
+  &__img-wrap {
+    background-color: #ce4d00;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+  }
+  &__cancel {
+    width: 14px;
+    height: 14px;
+    margin-top: 13px;
+  }
+  &__logo {
+    margin-top: 50px;
+    margin-right: 140px;
+  }
+  &__bottom-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 22px;
+  }
+  &__selection-wrap {
+    display: flex;
+  }
+  &__select-category {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: 26px;
+  }
+  &__contact-us {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 80%;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+>>>>>>> dff236653cae450a1920784f7db782d2e2ce27e8
 }

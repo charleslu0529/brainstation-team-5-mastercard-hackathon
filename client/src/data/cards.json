@@ -1,31 +1,32 @@
 [
     {
         "cardNumber": "123451259484",
+        "cardImage":"/assets/images/4060903275323474-chase.svg",
         "accounts": [
             {
                 "website": "amazon.com",
                 "date": "Last used 2021.02.02",
-                "image": ""
+                "image": "/assets/images/amazon.svg"
             },
             {
                 "website": "heb.com",
                 "date": "Last used 2021.02.02",
-                "image": ""
+                "image": "/assets/images/heb.svg"
             },
             {
                 "website": "kroger.com",
                 "date": "Last used 2021.02.02",
-                "image": ""
+                "image": "/assets/images/kroger.svg"
             },
             {
                 "website": "walmart.com",
                 "date": "Last used 2021.02.02",
-                "image": ""
+                "image": "/assets/images/walmart.svg"
             },
             {
                 "website": "ilovetattoos.ai",
                 "date": "Last used 2021.02.02",
-                "image": ""
+                "image": "/assets/images/ilovetattoos.svg"
             }
         ]
     }

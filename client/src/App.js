@@ -19,36 +19,37 @@ class App extends React.Component {
         console.log(event.target);
         let newCard = {
             "cardNumber": "513481649511",
+            "cardImage": "/assets/images/5502013275323474-citi.svg",
             "accounts": [
                 {
                     "website": "amazon.com",
                     "date": "Last used 2021.02.02",
-                    "image": ""
+                    "image": "/assets/images/amazon.svg"
                 },
                 {
                     "website": "heb.com",
                     "date": "Last used 2021.02.02",
-                    "image": ""
+                    "image": "/assets/images/heb.svg"
                 },
                 {
                     "website": "kroger.com",
                     "date": "Last used 2021.02.02",
-                    "image": ""
+                    "image": "/assets/images/kroger.svg"
                 },
                 {
                     "website": "walmart.com",
                     "date": "Last used 2021.02.02",
-                    "image": ""
+                    "image": "/assets/images/walmart.svg"
                 },
                 {
                     "website": "ilovetattoos.ai",
                     "date": "Last used 2021.02.02",
-                    "image": ""
+                    "image": "/assets/images/ilovetattoos.svg"
                 }
             ]
         };
         this.setState({
-            cards:[...this.state.cards, newCard]
+            cards:[newCard, ...this.state.cards]
         })
         props.history.push("/cards");
     }

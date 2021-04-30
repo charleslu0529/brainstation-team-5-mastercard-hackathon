@@ -6,7 +6,7 @@ import classes from './logo.module.scss';
 function Logo() {
     return (
         <Link to="/cards" className={classes.logo}>
-            <img src={logo} alt="Master Card" className={classes.logo__image}/>
+            <img src={logo} alt="Master-Card" className={classes.logo__image}/>
         </Link>
     )
 }
