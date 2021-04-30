@@ -5,6 +5,7 @@ import Login from "./components/LogIn/Login";
 import AddCard from "./components/AddCard/AddCard";
 import HomeScreen from './components/HomeScreen';
 import Header from './components/Header';
+import Dashboard from './components/Dashboard/Dashboard'
 
 function App() {
     return (
@@ -21,6 +22,11 @@ function App() {
                     path="/cards/add"
                     exact
                     render={(props) => <AddCard {...props} />}
+                />
+                <Route
+                    path='/dashboard'
+                    exact
+                    render={(props)=><Dashboard {...props}/>}
                 />
             </Switch>
         </div>
