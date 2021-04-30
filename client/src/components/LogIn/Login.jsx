@@ -7,7 +7,7 @@ import loginChevronIcon from '../../assets/login/login-chevron-icon.svg'
 
 function Login() {
     return (
-        <div>
+        <div className='login'>
            <div className='top__container'>
                 <h1>Welcome to</h1> 
                 <img alt='brand__logo'/>
