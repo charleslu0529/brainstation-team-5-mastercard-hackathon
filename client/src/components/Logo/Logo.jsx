@@ -1,11 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../../assets/logo/logo.svg';
+import classes from './logo.module.scss';
 
 function Logo() {
     return (
-        <Link to="/">
-            <img src={logo} alt="Master Card"/>
+        <Link to="/cards" className={classes.logo}>
+            <img src={logo} alt="Master Card" className={classes.logo__image}/>
         </Link>
     )
 }
