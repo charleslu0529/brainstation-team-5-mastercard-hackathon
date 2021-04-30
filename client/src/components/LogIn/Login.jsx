@@ -10,7 +10,7 @@ function Login() {
         <div className='login'>
            <div className='top__container'>
                 <h1>Welcome to</h1> 
-                <img alt='brand__logo'/>
+                <img className='brand__logo' alt='brand__logo'/>
                 <form className='login__form'>
                     <div className='form__container'>
                         <img src={loginUserIcon} alt='login-username-icon'/>
@@ -40,7 +40,7 @@ function Login() {
                     </div>
                     <button className='login__button'>Log in</button>
                 </form>
-                <div>
+                <div className='chevron__container'>
                 <p className='chevron__text'>Need help signing in?</p>
                 <img className='chevron__image' src={loginChevronIcon} alt='login-chevron-icon'/>
                 </div>
