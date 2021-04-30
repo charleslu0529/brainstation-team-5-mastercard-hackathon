@@ -1,5 +1,6 @@
 import React from "react";
 import xIcon from "../../assets/icons/x.svg";
+// import logoImg from '../../assets/images/shieldLogo.svg';
 import "./sideBar.scss";
 import sidebarFilter from '../../assets/sidebar/sidebar-filters.svg'
 import sidebarHome from '../../assets/sidebar/sidebar-home.svg'
@@ -31,7 +32,7 @@ export default function SideBar(props) {
                         />
                         
                     </div>
-                    <img className="sidebar__logo" src={logoImg} alt="Shield Logo"/>
+                    {/* <img className="sidebar__logo" src={logoImg} alt="Shield Logo"/> */}
                 </div>
                 <div className="sidebar__bottom-section">
                     <div className="sidebar__selection-wrap">
